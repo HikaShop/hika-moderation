@@ -1,0 +1,36 @@
+#Kunena tr.krow1.moderationAffectedToMe td {
+	background-color:#fee0e0;
+}
+#Kunena tr.krow2.moderationAffectedToMe td {
+	background-color:#ffeaea;
+}
+#Kunena tr.krow1.moderationAffectedNotMe td {
+	background-color:#fff7bd;
+}
+#Kunena tr.krow2.moderationAffectedNotMe td {
+	background-color:#fffba2;
+}
+#Kunena span.priorityIcon {
+	display:inline-block;
+	width:32px;
+	height:32px;
+	vertical-align:middle;
+	background-repeat:no-repeat;
+}
+#Kunena span.priorityIcon.urgent {
+	background-image:url(../images/priority_urgent.png);
+}
+#Kunena span.priorityIcon.high {
+	background-image:url(../images/priority_high.png);
+}
+#Kunena span.priorityIcon.low {
+	background-image:url(../images/priority_low.png);
+}
+#Kunena span.moderationReading {
+	display:inline-block;
+	width:32px;
+	height:32px;
+	vertical-align:middle;
+	background-repeat:no-repeat;
+	background-image:url(../images/moderation_eye.png);
+}

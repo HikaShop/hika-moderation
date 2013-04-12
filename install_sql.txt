@@ -1,0 +1,6 @@
+ALTER TABLE #__kunena_topics
+  ADD `moderation_open` int(4) NOT NULL DEFAULT '1',
+  ADD `moderation_priority` int(11) NOT NULL DEFAULT '0',
+  ADD `moderation_affected` int(11) NOT NULL DEFAULT '0',
+  ADD `moderation_reading` int(10) NOT NULL DEFAULT '0',
+  ADD `moderation_comments` text NULL;

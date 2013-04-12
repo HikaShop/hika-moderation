@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.5" type="plugin" group="kunena" method="upgrade">
+	<name>plg_kunena_hikamoderation</name>
+	<version>1.0.0</version>
+	<creationDate>2012-11-09</creationDate>
+	<author>Obsidev S.A.R.L.</author>
+	<authorEmail>contact@obsidev.com</authorEmail>
+	<authorUrl>http://www.obsidev.com</authorUrl>
+	<copyright>www.obsidev.com</copyright>
+	<license>GNU/GPLv3 or later</license>
+	<description>Moderation tickets</description>
+	<files>
+		<filename plugin="hikamoderation">hikamoderation.php</filename>
+		<filename>index.html</filename>
+		<folder>hikamoderation</folder>
+	</files>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.plg_kunena_hikamoderation.sys.ini</language>
+	</languages>
+	<params>
+		<param name="activity" type="radio" default="1" label="Override Activity" description="Override Activity">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param name="badges" type="radio" default="1" label="Display badges" description="Display badges">
+			<option value="0">NO</option>
+			<option value="1">YES</option>
+		</param>
+		<param name="users" type="text" default="42" label="Moderators (user id)" description="list of moderator ids"/>
+		<param name="categories" type="text" default="1,2" label="Moderated categories" description="list of categories which are moderated"/>
+	</params>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="activity" type="radio" default="1" label="Override Activity" description="Override Activity">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+				<field name="badges" type="radio" default="1" label="Display badges" description="Display badges">
+					<option value="0">NO</option>
+					<option value="1">YES</option>
+				</field>
+				<field name="users" type="text" default="42" label="Moderators (user id)" description="list of moderator ids"/>
+				<field name="categories" type="text" default="1,2" label="Moderated categories" description="list of categories which are moderated"/>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
